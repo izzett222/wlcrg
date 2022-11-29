@@ -1,3 +1,6 @@
+import Image from "next/image";
+import rhinoceros from "/public/assets/images/rhinoceros.webp"
+
 export default function Mission() {
   return (
     <section className="h-[500px] bg-primary font-[Roboto] text-white py-20">
@@ -17,7 +20,9 @@ export default function Mission() {
             conservation of those living organisms
           </p>
         </div>
-        <div className="bg-gray-100 flex-1"></div>
+        <div className="bg-gray-100 flex-1 relative shadow-2xl rounded-sm overflow-hidden">
+          <Image src={rhinoceros} alt="rhinoceros" className="object-cover" fill />
+        </div>
       </div>
     </section>
   );

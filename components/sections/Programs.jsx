@@ -1,3 +1,6 @@
+import Image from "next/image";
+import swamp from "/public/assets/images/swamp.webp";
+
 export default function Programs() {
   return (
     <section className="h-[500px] font-[Roboto] text-dark-gray py-20">
@@ -21,7 +24,9 @@ export default function Programs() {
             conservation of those living organisms
           </p>
         </div>
-        <div className="bg-gray-100 flex-1"></div>
+        <div className="bg-gray-100 flex-1 relative shadow-2xl rounded-sm overflow-hidden">
+          <Image src={swamp} alt="swamp" fill className="object-cover" />
+        </div>
       </div>
     </section>
   );
