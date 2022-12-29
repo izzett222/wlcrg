@@ -4,6 +4,7 @@ import Services from "../components/sections/Services";
 import Programs from "../components/sections/Programs";
 import Footer from "../components/sections/Footer";
 import Clients from "../components/sections/Clients";
+import Team from "../components/sections/Team";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Mission />
         <Programs />
         <Clients />
+        <Team />
         <Footer />
       </main>
     </>
